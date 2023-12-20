@@ -3,7 +3,7 @@ version: '3.3'
 
 services:
   primary:
-    container_name: solace_test
+    container_name: solace_container
     image: solace/solace-pubsub-standard:latest
     volumes:
         - .\cert:/run/secrets
