@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.solace.samples;
+package com.solace.samples.clients_protobuf;
 
 import java.io.IOException;
 import java.sql.Timestamp;
@@ -29,7 +29,8 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 import com.google.protobuf.util.JsonFormat;
-import com.solace.samples.BftProtoMsg.Bft;
+import com.solace.samples.protocgenerated.BftProtoMsg.Bft;
+import com.solace.samples.network.KeycloakTokenRequester;
 
 
 
@@ -37,7 +38,7 @@ import com.solace.samples.BftProtoMsg.Bft;
  * A Mqtt topic subscriber
  *
  */
-public class TopicSubscriber {
+public class ProtobufTopicSubscriber {
 
     static boolean isShutdown = false;
     int incomingMsgCounter = 0;
@@ -47,23 +48,30 @@ public class TopicSubscriber {
     }
 
     public void run(String... args) throws IOException {
-        System.out.println("TopicSubscriber initializing...");
+        System.out.println("ProtobufTopicSubscriber initializing...");
 
-        
+        // Initialising variables for Keycloak token retrieval
+        String keycloakTokenEndpoint = "https://localhost:7778/auth/realms/master/protocol/openid-connect/token";
+        String keycloakUsername = "testuser";
+        String keycloakPassword = "password";
 
+        KeycloakTokenRequester tokenRequester = new KeycloakTokenRequester(keycloakTokenEndpoint, keycloakUsername, keycloakPassword);
+        String[] tokenArray = tokenRequester.getTokenArray();
+
+        // Initialising variables for MQTT Connection to Solace PubSub broker
         String host = args[0];
-        String idToken = args[1];
-        String accessToken = "";
-        if (args.length > 2) accessToken = args[2];
+        String idToken = tokenArray[0];
+        String accessToken = tokenArray[1];
+        String solaceOAuthProfile = "JavaClientToKeyCloak";
 
         try {
             // Create an Mqtt client
             MqttClient mqttClient = new MqttClient(host, "HelloWorldSub_" + UUID.randomUUID().toString().substring(0,8));
             MqttConnectOptions connOpts = new MqttConnectOptions();
             connOpts.setCleanSession(true);
-            connOpts.setUserName("DOESNTMATTER");
-            String password = "OPENID~KeyCloak~" + idToken + "~" + accessToken;
-            if (args.length > 2) connOpts.setPassword(password.toCharArray());
+            connOpts.setUserName("DOESNTMATTER"); 
+            String password = "OPENID~" + solaceOAuthProfile + "~" + idToken + "~" + accessToken;
+            connOpts.setPassword(password.toCharArray());
             
             // Connect the client
             System.out.println("Connecting to Solace messaging at "+host);
@@ -71,9 +79,8 @@ public class TopicSubscriber {
             System.out.println("Connected");
 
             // Topic filter the client will subscribe to
-            //final String subTopic = "solace/samples/+/direct/#";
-            final String subTopic = "solace/bft";
-            
+            String solaceTopic = "solace/protobuf";
+
             // Callback - Anonymous inner-class for receiving messages
             mqttClient.setCallback(new MqttCallback() {
 
@@ -101,8 +108,8 @@ public class TopicSubscriber {
             });
             
             // Subscribe client to the topic filter and a QoS level of 0
-            System.out.println("Subscribing client to topic: " + subTopic);
-            mqttClient.subscribe(subTopic, 0);
+            System.out.println("Subscribing client to topic: " + solaceTopic);
+            mqttClient.subscribe(solaceTopic, 0);
             System.out.println("Subscribed. Press [ENTER] to quit.");
 
             // Wait for the message to be received
@@ -132,11 +139,11 @@ public class TopicSubscriber {
 
     public static void main(String[] args) throws IOException {
         // Check command line arguments
-        if (args.length < 2) {
-            System.out.println("Usage: topicSubscriber tcp://<host:port> <client-username> [client-password]");
+        if (args.length != 1) {
+            System.out.println("Usage: ProtobufTopicSubscriber tcp://<host:port>");
             System.out.println();
             System.exit(-1);
         }
-        new TopicSubscriber().run(args);
+        new ProtobufTopicSubscriber().run(args);
     }
 }

@@ -1,4 +1,4 @@
-package com.solace.samples;
+package com.solace.samples.network;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -16,19 +16,23 @@ import javax.net.ssl.X509TrustManager;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-public class LocalhostKeycloakTokenRequester {
+public class KeycloakTokenRequester {
 
-    
+    String url;
+    String username;
+    String password;
+
+    public KeycloakTokenRequester(String url, String username, String password) {
+        this.url = url;
+        this.username = username;
+        this.password = password;
+    }
 
     
     public String[] getTokenArray() {
-
-        String url = "https://localhost:7778/auth/realms/master/protocol/openid-connect/token";
-        String username = "138sqn_publisher_subscriber";
-        String password = "password";
         
         
-        String data = "grant_type=password&scope=openid&username=" + username + "&password="+ password + "&client_id=solace";
+        String data = "grant_type=password&scope=openid&username=" + this.username + "&password="+ this.password + "&client_id=solace";
 
         // Create a trust manager that does not validate certificate chains
         TrustManager[] trustAllCerts = new TrustManager[]{
@@ -54,7 +58,7 @@ public class LocalhostKeycloakTokenRequester {
         }
 
         try {
-        URL apiUrl = new URL(url);
+        URL apiUrl = new URL(this.url);
         HttpURLConnection connection = (HttpURLConnection) apiUrl.openConnection();
 
         // Set the request method to POST

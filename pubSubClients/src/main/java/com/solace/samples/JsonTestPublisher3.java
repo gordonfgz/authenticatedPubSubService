@@ -26,7 +26,7 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 import com.google.protobuf.util.JsonFormat;
-import com.solace.samples.BftProtoMsg.Bft;
+import com.solace.samples.protocgenerated.BftProtoMsg.Bft;
 
 /**
  * A Mqtt topic publisher 

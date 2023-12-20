@@ -1,29 +1,18 @@
-package com.solace.samples;
+package com.solace.samples.clients_protobuf;
 
-import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.UUID;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.Random;
 
 import org.eclipse.paho.client.mqttv3.MqttClient;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
-import com.solace.samples.BftProtoMsg.Bft;
-import com.solace.samples.BftProtoMsg.OptionalData;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import java.text.SimpleDateFormat;
+import com.solace.samples.protocgenerated.BftProtoMsg.Bft;
 import java.util.Date;
 
 
 
-public class ProtobufTimerPublisherRunnable implements Runnable{
+public class ProtobufPublisherRunnable implements Runnable{
 
     MqttClient mqttClient;
     int id;
@@ -33,7 +22,7 @@ public class ProtobufTimerPublisherRunnable implements Runnable{
     int message_rate;
     int sleepTime;
 
-    public ProtobufTimerPublisherRunnable(MqttClient mqttClient, int i, CountDownLatch latch, int running_duration, int message_rate, int sleepTime){
+    public ProtobufPublisherRunnable(MqttClient mqttClient, int i, CountDownLatch latch, int running_duration, int message_rate, int sleepTime){
         this.mqttClient = mqttClient;
         this.id = i;
         this.latch = latch;
@@ -71,7 +60,6 @@ public class ProtobufTimerPublisherRunnable implements Runnable{
     public void publishARandomMessage(int i) {
         try {
             // Create a Mqtt message
-            //String content = "Hello for the " + Integer.toString(i) + " time! From: " + Thread.currentThread().getName();
 
             // Randomising lat and long
             Random random = new Random();
@@ -110,12 +98,9 @@ public class ProtobufTimerPublisherRunnable implements Runnable{
             // Set the QoS on the Messages - 
             // Here we are using QoS of 0 (equivalent to Direct Messaging in Solace)
             message.setQos(0);
-            
-            
-            
+  
             // Publish the message
-            //mqttClient.publish("solace/samples/mqtt/direct/pub", message);
-            mqttClient.publish("solace/bft", message);
+            mqttClient.publish("solace/protobuf", message);
             Date date = new Date(System.currentTimeMillis());
 
             // Create a SimpleDateFormat for formatting

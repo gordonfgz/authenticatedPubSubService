@@ -1,0 +1,1 @@
+build/staged/bin/protobufTopicSubscriber tcp://localhost:1883

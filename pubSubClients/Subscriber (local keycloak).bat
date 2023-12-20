@@ -1,1 +1,0 @@
-build/staged/bin/topicSubscriberForPublish tcp://localhost:1883

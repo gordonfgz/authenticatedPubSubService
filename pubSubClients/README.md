@@ -1,18 +1,10 @@
 [![Build Status](https://travis-ci.org/SolaceSamples/solace-samples-mqtt.svg?branch=master)](https://travis-ci.org/SolaceSamples/solace-samples-mqtt)
 
 # Getting Started Examples
-## MQ Telemetry Transport (MQTT)
 
-MQTT is a standard lightweight protocol for sending and receiving messages. As such, in addition to information provided on the Solace [developer portal](http://dev.solace.com/tech/mqtt/), you may also look at some external sources for more details about MQTT. The following are good places to start
+## Disclaimer
 
-- http://mqtt.org/
-- https://www.eclipse.org/paho/
-
-The "Getting Started" tutorials will get you up to speed and sending messages with Solace technology as quickly as possible. There are three ways you can get started:
-
-- Follow [these instructions](https://cloud.solace.com/learn/group_getting_started/ggs_signup.html) to quickly spin up a cloud-based Solace messaging service for your applications.
-- Follow [these instructions](https://docs.solace.com/Solace-SW-Broker-Set-Up/Setting-Up-SW-Brokers.htm) to start the Solace VMR in leading Clouds, Container Platforms or Hypervisors. The tutorials outline where to download and how to install the Solace VMR.
-- If your company has Solace message routers deployed, contact your middleware team to obtain the host name or IP address of a Solace message router to test against, a username and password to access it, and a VPN in which you can produce and consume messages.
+This is a heavily modified repo from Solace Samples, made for me to document what I've learnt and also serves as a refresher for me to come back for reference.
 
 ## Contents
 
@@ -26,9 +18,27 @@ There are no prerequisites.
 
     ./gradlew build
 
-## Running the Samples
+## Quick Play
+
+2 Windows Batch files have been done up for you to execute a protobuf publisher and subscriber respectively. If you have Keycloak and Solace set up correctly according to the tutorial, you should observe both clients working correctly.
+
+## Running the Samples in an IDE
 
 To try individual samples, build the project from source and then run samples like the following:
+
+    Samples I have wrote:
+
+    ** JSON clients **
+    ./build/staged/bin/jsonTopicSubscriber tcp://localhost:1883
+    ./build/staged/bin/jsonConcurrentPublisher tcp://localhost:1883 1500 1000 0
+
+
+    ** PROTOBUF clients **
+    ./build/staged/bin/protobufTopicSubscriber tcp://localhost:1883
+    ./build/staged/bin/protobufConcurrentPublisher tcp://localhost:1883 1500 1000 0
+
+
+    Samples provided by Solace:
 
     ./build/staged/bin/topicPublisher tcp://localhost:1883 <id-token> <access-token>
     ./build/staged/bin/topicSubscriber tcp://localhost:1883 <id-token> <access-token>
@@ -36,71 +46,8 @@ To try individual samples, build the project from source and then run samples li
     ./build/staged/bin/topicSubscriberForExpire tcp://localhost:1883 <id-token> <access-token>
     ./build/staged/bin/topicSubscriberForPublish tcp://localhost:1883 <id-token> <access-token>
 
-    **TEST CASES BUILT**
 
-    ./build/staged/bin/protobufTestPublisher1 tcp://localhost:1883 <id-token> <access-token>
-    ./build/staged/bin/protobufTestPublisher2 tcp://localhost:1883 <id-token> <access-token>
-    ./build/staged/bin/protobufTestPublisher3 tcp://localhost:1883 <id-token> <access-token>
-
-    ./build/staged/bin/jsonTestPublisher1 tcp://localhost:1883 <id-token> <access-token>
-    ./build/staged/bin/jsonTestPublisher2 tcp://localhost:1883 <id-token> <access-token>
-    ./build/staged/bin/jsonTestPublisher3 tcp://localhost:1883 <id-token> <access-token>
+    
 
 
-    ** LIMIT TESTER **
-    ./build/staged/bin/protobufLimitTesterPublisher tcp://localhost:1883 [id_token] [access_token] [num_threads] [message_rate] [running_duration]
 
-
-    **red hat**
-    ./build/staged/bin/redhatProdSubscriber tcp://localhost:1883
-    ./build/staged/bin/redhatProdSubscriber tcp://mqtt.apps.cluster-76wwd.76wwd.sandbox51.opentlc.com:443
-    ./build/staged/bin/redhatProtobufPublisher tcp://localhost:1883 1500 1000 0
-
-See the individual tutorials linked from the [tutorials home page](https://dev.solace.com/samples/solace-samples-mqtt/) for full details which can walk you through the samples, what they do, and how to correctly run them to explore MQTT.
-
-## Exploring the Samples
-
-### Setting up your preferred IDE
-
-Using a modern Java IDE provides cool productivity features like auto-completion, on-the-fly compilation, assisted refactoring and debugging which can be useful when you're exploring the samples and even modifying the samples. Follow the steps below for your preferred IDE.
-
-#### Using Eclipse
-
-To generate Eclipse metadata (.classpath and .project files), do the following:
-
-    ./gradlew eclipse
-
-Once complete, you may then import the projects into Eclipse as usual:
-
- *File -> Import -> Existing projects into workspace*
-
-Browse to the *'solace-samples-java'* root directory. All projects should import
-free of errors.
-
-#### Using IntelliJ IDEA
-
-To generate IDEA metadata (.iml and .ipr files), do the following:
-
-    ./gradlew idea
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Authors
-
-See the list of [contributors](https://github.com/SolaceSamples/solace-samples-mqtt/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the Apache License, Version 2.0. - See the [LICENSE](LICENSE) file for details.
-
-## Resources
-
-For more information try these resources:
-
-- [Tutorials](https://tutorials.solace.dev/)
-- The Solace Developer Portal website at: http://dev.solace.com
-- Get a better understanding of [Solace technology](https://solace.com/products/tech/).
-- Check out the [Solace blog](http://dev.solace.com/blog/) for other interesting discussions around Solace technology
-- Ask the [Solace community.](https://solace.community)

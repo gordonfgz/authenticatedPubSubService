@@ -1,1 +1,0 @@
-build/staged/bin/redhatDevSubscriber tcp://localhost:1883

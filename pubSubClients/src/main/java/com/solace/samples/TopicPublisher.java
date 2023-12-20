@@ -57,17 +57,9 @@ public class TopicPublisher {
             System.out.println("Connected.  Press [ENTER] to quit.");
             
             for (int i=0; i<100; i++) {
-
-
-
                 
 	            // Create a Mqtt message
 	            String content = "Hello world from MQTT!";
-
-
-
-
-
 
 	            MqttMessage message = new MqttMessage(content.getBytes());
 	            // Set the QoS on the Messages - 

@@ -1,8 +1,3 @@
-// apply plugin: 'java'
-// apply plugin: 'eclipse'
-// apply plugin: 'idea'
-// apply plugin: 'application'
-// apply plugin: 'com.google.protobuf'
 
 plugins {
     id "com.google.protobuf" version "0.9.4"
@@ -64,20 +59,14 @@ def scripts = [ 'topicPublisher':'com.solace.samples.TopicPublisher',
                 'confirmedPublish':'com.solace.samples.ConfirmedDeliveryProducer',
                 'QoS1Producer':'com.solace.samples.QoS1Producer',
                 'QoS1Consumer':'com.solace.samples.QoS1Consumer',
-                'topicPublisherConcurrent':'com.solace.samples.TopicPublisherConcurrent',
-                'topicSubscriberForExpire':'com.solace.samples.TopicSubscriberForExpire',
-                'topicSubscriberForPublish':'com.solace.samples.TopicSubscriberForPublish',
-                'redhatTopicSubscriberForPublish':'com.solace.samples.RedhatTopicSubscriberForPublish',
-                'protobufTestPublisher1':'com.solace.samples.ProtobufTestPublisher1',
-                'protobufTestPublisher2':'com.solace.samples.ProtobufTestPublisher2',
-                'protobufTestPublisher3':'com.solace.samples.ProtobufTestPublisher3',
-                'jsonTestPublisher1':'com.solace.samples.JsonTestPublisher1',
-                'jsonTestPublisher2':'com.solace.samples.JsonTestPublisher2',
-                'jsonTestPublisher3':'com.solace.samples.JsonTestPublisher3',
-                'protobufLimitTesterPublisher':'com.solace.samples.ProtobufLimitTesterPublisher',
-                'httpPostExample':'com.solace.samples.HttpPostExample',
-                'redhatDevSubscriber':'com.solace.samples.RedhatDevSubscriber',
-                'redhatDevProtobufPublisher':'com.solace.samples.RedhatDevProtobufPublisher'
+
+                // for sending and receiving protobuf objects
+                'protobufTopicSubscriber':'com.solace.samples.clients_protobuf.ProtobufTopicSubscriber',
+                'protobufConcurrentPublisher':'com.solace.samples.clients_protobuf.ProtobufConcurrentPublisher',
+
+                // for sending and receiving json objects
+                'jsonTopicSubscriber':'com.solace.samples.clients_json.JsonTopicSubscriber',
+                'jsonConcurrentPublisher':'com.solace.samples.clients_json.JsonConcurrentPublisher'
 
 ]
 

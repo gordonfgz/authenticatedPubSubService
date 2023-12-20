@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package com.solace.samples;
+package com.solace.samples.protocgenerated;
 
 // optional fields to specify for the messages 
 message OptionalData{

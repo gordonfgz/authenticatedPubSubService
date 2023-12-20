@@ -1,0 +1,1 @@
+build/staged/bin/protobufConcurrentPublisher tcp://localhost:1883 1500 1000 0
