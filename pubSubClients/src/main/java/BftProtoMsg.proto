@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package com.solace.samples;
+
+// optional fields to specify for the messages 
+message OptionalData{
+  string group = 1;
+  string unit = 2;
+  int32 speed = 3;
+  int32 bearing = 4;
+}
+
+message Bft{
+  optional string id = 1;
+  optional string type = 2;
+  optional double latitude = 3;
+  optional double longitude = 4;
+  optional double altitude = 5;
+  optional int64 updatedTime = 6;
+  optional int64 pubTime = 7;
+  optional bool online = 8;
+  optional int32 frequency = 9;
+  optional string name = 10;
+  OptionalData optionalData = 11;
+}
