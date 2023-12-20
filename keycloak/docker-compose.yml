@@ -1,0 +1,21 @@
+version: '3'
+services:
+  mykeycloak:
+    image: jboss/keycloak:16.1.1
+    container_name: keycloak_container
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+      - DB_VENDOR=H2
+    volumes:
+      - .\cert:/etc/x509/https
+      - .\data:/opt/jboss/keycloak/standalone/data
+    ports:
+      - "7777:8080"
+      - "7778:8443"
+    networks:
+      - solace-net
+
+networks:
+  solace-net:
+    external: true
