@@ -1,0 +1,252 @@
+2023-12-19 12:47:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 12:47:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 12:47:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 14:31:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 14:31:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 14:31:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 15:52:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 15:52:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 15:52:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 17:25:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 17:25:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 17:25:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 17:40:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 17:40:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 17:40:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 17:55:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 17:55:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 17:55:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 18:37:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 18:37:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 18:37:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 18:52:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 18:52:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 18:52:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 19:07:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 19:07:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 19:07:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 19:22:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 19:22:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 19:22:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 19:37:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 19:37:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 19:37:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 19:52:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 19:52:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 19:52:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 20:07:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 20:07:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 20:07:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 22:09:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 22:09:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 22:09:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 22:39:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 22:39:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 22:39:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 23:10:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 23:10:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 23:10:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-19 23:43:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-19 23:43:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-19 23:43:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 00:02:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 00:02:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 00:02:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 00:18:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 00:18:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 00:18:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 00:38:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 00:38:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 00:38:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 00:57:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 00:57:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 00:57:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 01:12:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 01:12:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 01:12:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 01:27:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 01:27:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 01:27:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 01:42:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 01:42:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 01:42:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 01:57:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 01:57:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 01:57:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 02:12:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 02:12:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 02:12:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 02:27:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 02:27:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 02:27:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]
+2023-12-20 02:42:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2023-12-20 02:42:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select distinct realmentit0_.EVENTS_EXPIRATION as col_0_0_ from REALM realmentit0_ where realmentit0_.EVENTS_EXPIRATION>0 [42102-197]
+2023-12-20 02:42:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "REALM" not found; SQL statement:
+select realmentit0_.ID as col_0_0_ from REALM realmentit0_ [42102-197]

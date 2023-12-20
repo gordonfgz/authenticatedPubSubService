@@ -1,0 +1,18 @@
+[req]
+default_bits  = 2048
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+x509_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+countryName = CA
+stateOrProvinceName = N/A
+localityName = Ottawa
+organizationName = Solace
+emailAddress = myemail@email.com
+organizationalUnitName = myorg-unit
+commonName = mypubsub
+[req_ext]
+subjectAltName = DNS:mypubsub, DNS:localhost, IP:10.0.2.2
+[v3_req]
+subjectAltName = DNS:mypubsub, DNS:localhost, IP:10.0.2.2

@@ -1,0 +1,59 @@
+# docker-compose -f PubSubStandard_singleNode.yml up
+version: '3.3'
+
+services:
+  primary:
+    container_name: solace_test
+    image: solace/solace-pubsub-standard:latest
+    volumes:
+        - .\cert:/run/secrets
+        - .\data:/var/lib/solace
+        - soft-adb-ephemeral:/var/lib/solace/spool-cache
+    ports:
+    #Port Mappings:  With the exception of SMF, ports are mapped straight
+    #through from host to container.  This may result in port collisions on
+    #commonly used ports that will cause failure of the container to start.
+      #Web transport over TLS
+      - "1443:1443"
+      #SEMP over TLS
+      - "1943:1943"
+      #SEMP / PubSub+ Manager
+      - "8080:8080"
+      - "55555:55555"
+      - "55556:55556"
+      #SMF Compressed
+      - "55003:55003"
+      #SMF over TLS
+      - "55443:55443"
+      #Web transport
+      - "8008:8008"
+      #MQTT Default VPN
+      - "1883:1883"
+      #MQTT Default VPN over TLS
+      - "8883:8883"
+      #MQTT Default VPN over WebSockets
+      - "8000:8000"
+      #AMQP Default VPN over TLS
+      - "5671:5671"
+      #AMQP Default VPN
+      - "5672:5672"
+      #REST Default VPN over TLS
+      - "9443:9443"
+      #REST Default VPN
+      - "9000:9000"
+      #SSH connection to CLI
+      - "2222:2222"
+    shm_size: 2g
+    environment:
+      - username_admin_globalaccesslevel=admin
+      - username_admin_password=admin
+      - system_scaling_maxconnectioncount=100
+      - tls_servercertificate_filepath=mypubsub.pem
+
+    networks:
+      - solace-net
+networks:
+  solace-net:
+    external: true
+volumes:
+    soft-adb-ephemeral:
