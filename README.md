@@ -1,7 +1,7 @@
 # What is this repository?
 Ultimately, this repo contains a PubSub Service utilising Solace PubSub+ Broker and authenticated by Keycloak.
 
-## How to navigate this repository
+# How to navigate this repository
 This repo contains 2 main branches, tutorial and main. 
 
 ### Tutorial Branch:
